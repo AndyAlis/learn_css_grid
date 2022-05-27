@@ -13,6 +13,10 @@ a {
     color: #fff;
     text-decoration: none;
 }
+h1 {
+    text-align: center;
+    padding-top: 2rem;
+}
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;

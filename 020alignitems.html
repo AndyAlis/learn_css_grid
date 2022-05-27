@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>011 fr vs % units</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            /* align-items сохраняют сетку, но по размеру содержимого */
+            align-items: center;
+            align-items: flex-start;
+            /* justify-items не очень понятно двигает внутренность */
+            justify-items: end;
+
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html">Index</a>
+    <pre>
+        .container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            /* align-items сохраняют сетку, но по размеру содержимого */
+            align-items: center;
+            align-items: flex-start;
+            /* justify-items не очень понятно двигает внутренность */
+            justify-items: end;
+
+        }
+    </pre>
+
+    <div class="container">
+        <div class="cell cell-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum omnis, architecto esse sint aliquid corrupti tempora commodi, autem, numquam ullam quibusdam doloremque..</div>
+        <div class="cell cell-2">cell 2</div>
+        <div class="cell cell-3">cell 3</div>
+        <div class="cell cell-4">cell 4</div>
+        <div class="cell cell-5">cell 5</div>
+        <div class="cell cell-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum omnis, architecto esse sint aliquid corrupti tempora commodi, autem, numquam ullam quibusdam doloremque. Odit explicabo asperiores, cupiditate, sunt consequuntur velit laboriosam quos consequatur quidem eligendi quis, deleniti distinctio vero repudiandae rem impedit a quisquam in dolor aperiam enim veniam..</div>
+        <!-- <div class="cell cell-">cell 7</div>
+        <div class="cell cell-">cell 8</div> -->
+    </div>
+
+</body>
+</html>
